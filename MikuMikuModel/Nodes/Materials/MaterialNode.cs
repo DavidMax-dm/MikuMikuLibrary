@@ -219,7 +219,7 @@ namespace MikuMikuModel.Nodes.Materials
         {
             Nodes.Add( new MaterialTextureNode( "Diffuse", Data.Diffuse ) );
             Nodes.Add( new MaterialTextureNode( "Ambient", Data.Ambient ) );
-            Nodes.Add( new MaterialTextureNode( "Normal", Data.Normal ) );
+            Nodes.Add( new MaterialTextureNode( "法线", Data.Normal ) );
             Nodes.Add( new MaterialTextureNode( "Specular", Data.Specular ) );
             Nodes.Add( new MaterialTextureNode( "Toon curve", Data.ToonCurve ) );
             Nodes.Add( new MaterialTextureNode( "Reflection", Data.Reflection ) );
