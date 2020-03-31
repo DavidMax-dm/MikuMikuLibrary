@@ -8,15 +8,15 @@ namespace MikuMikuModel.Nodes.Objects
     {
         public override NodeFlags Flags => NodeFlags.None;
 
-        [DisplayName( "Osage bones" )] public List<ExOsageBone> OsageBones => GetProperty<List<ExOsageBone>>();
+        [DisplayName( "Osage骨骼" )] public List<ExOsageBone> OsageBones => GetProperty<List<ExOsageBone>>();
 
-        [DisplayName( "Osage names" )] public List<string> OsageNames => GetProperty<List<string>>();
+        [DisplayName( "Osage名称" )] public List<string> OsageNames => GetProperty<List<string>>();
 
-        [DisplayName( "Nodes" )] public List<ExNode> ExNodes => GetProperty<List<ExNode>>( "Nodes" );
+        [DisplayName( "节点" )] public List<ExNode> ExNodes => GetProperty<List<ExNode>>( "Nodes" );
 
-        [DisplayName( "Bone names" )] public List<string> BoneNames => GetProperty<List<string>>();
+        [DisplayName( "骨骼名称" )] public List<string> BoneNames => GetProperty<List<string>>();
 
-        [DisplayName( "Entries" )] public List<ExEntry> Entries => GetProperty<List<ExEntry>>();
+        [DisplayName( "条目" )] public List<ExEntry> Entries => GetProperty<List<ExEntry>>();
 
         protected override void Initialize()
         {
@@ -30,6 +30,7 @@ namespace MikuMikuModel.Nodes.Objects
         {
         }
 
+        [DisplayName( "名称" )]
         public ExDataNode( string name, ExData data ) : base( name, data )
         {
         }
