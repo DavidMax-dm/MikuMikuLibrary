@@ -3,8 +3,8 @@
 * Format library and file editor for Hatsune Miku: Project DIVA games.
 
 # Building
-* [Stable (release) builds](https://github.com/blueskythlikesclouds/MikuMikuLibrary/releases)
-* [Unstable (development) builds](https://ci.appveyor.com/project/DavidMax-dm/mikumikulibrary/build/artifacts)
+* [未编译版本](https://github.com/blueskythlikesclouds/MikuMikuLibrary/releases)
+* [最新的版本](https://ci.appveyor.com/project/DavidMax-dm/mikumikulibrary/build/artifacts)
 
 # Projects
 ## Miku Miku Library
