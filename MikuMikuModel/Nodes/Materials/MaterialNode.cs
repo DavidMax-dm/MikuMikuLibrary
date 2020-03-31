@@ -12,7 +12,7 @@ namespace MikuMikuModel.Nodes.Materials
         public override NodeFlags Flags => NodeFlags.Add | NodeFlags.Rename;
         public override Bitmap Image => ResourceStore.LoadBitmap( "Icons/Material.png" );
 
-        [DisplayName( "Shader name" )]
+        [DisplayName( "Shader名字" )]
         public string Shader
         {
             get => GetProperty<string>();
@@ -20,7 +20,7 @@ namespace MikuMikuModel.Nodes.Materials
         }
 
         [TypeConverter( typeof( ColorTypeConverter ) )]
-        [DisplayName( "Diffuse color" )]
+        [DisplayName( "漫反射颜色" )]
         public Color DiffuseColor
         {
             get => GetProperty<Color>();
@@ -28,7 +28,7 @@ namespace MikuMikuModel.Nodes.Materials
         }
 
         [TypeConverter( typeof( ColorTypeConverter ) )]
-        [DisplayName( "Ambient color" )]
+        [DisplayName( "环境颜色" )]
         public Color AmbientColor
         {
             get => GetProperty<Color>();
@@ -36,7 +36,7 @@ namespace MikuMikuModel.Nodes.Materials
         }
 
         [TypeConverter( typeof( ColorTypeConverter ) )]
-        [DisplayName( "Specular color" )]
+        [DisplayName( "镜面颜色" )]
         public Color SpecularColor
         {
             get => GetProperty<Color>();
@@ -44,20 +44,21 @@ namespace MikuMikuModel.Nodes.Materials
         }
 
         [TypeConverter( typeof( ColorTypeConverter ) )]
-        [DisplayName( "Emission color" )]
+        [DisplayName( "Emission颜色" )]
         public Color EmissionColor
         {
             get => GetProperty<Color>();
             set => SetProperty( value );
         }
 
-        [DisplayName( "Enable alpha" )]
+        [DisplayName( "激活Alpha" )]
         public bool IsAlphaEnabled
         {
             get => GetProperty<bool>();
             set => SetProperty( value );
         }
 
+        [DisplayName( "光泽度" )]
         public float Shininess
         {
             get => GetProperty<float>();
@@ -217,14 +218,14 @@ namespace MikuMikuModel.Nodes.Materials
 
         protected override void PopulateCore()
         {
-            Nodes.Add( new MaterialTextureNode( "Diffuse", Data.Diffuse ) );
-            Nodes.Add( new MaterialTextureNode( "Ambient", Data.Ambient ) );
+            Nodes.Add( new MaterialTextureNode( "漫反射", Data.Diffuse ) );
+            Nodes.Add( new MaterialTextureNode( "环境", Data.Ambient ) );
             Nodes.Add( new MaterialTextureNode( "法线", Data.Normal ) );
-            Nodes.Add( new MaterialTextureNode( "Specular", Data.Specular ) );
-            Nodes.Add( new MaterialTextureNode( "Toon curve", Data.ToonCurve ) );
-            Nodes.Add( new MaterialTextureNode( "Reflection", Data.Reflection ) );
-            Nodes.Add( new MaterialTextureNode( "Tangent", Data.Tangent ) );
-            Nodes.Add( new MaterialTextureNode( "Unknown slot", Data.Texture08 ) );
+            Nodes.Add( new MaterialTextureNode( "镜面反射", Data.Specular ) );
+            Nodes.Add( new MaterialTextureNode( "Toon曲线", Data.ToonCurve ) );
+            Nodes.Add( new MaterialTextureNode( "反射", Data.Reflection ) );
+            Nodes.Add( new MaterialTextureNode( "切线", Data.Tangent ) );
+            Nodes.Add( new MaterialTextureNode( "未知slot", Data.Texture08 ) );
         }
 
         protected override void SynchronizeCore()
