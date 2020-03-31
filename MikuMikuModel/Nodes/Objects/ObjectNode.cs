@@ -37,7 +37,7 @@ namespace MikuMikuModel.Nodes.Objects
             set => SetProperty( value );
         }
 
-        [DisplayName( "Bounding sphere" )]
+        [DisplayName( "边界球" )]
         public BoundingSphere BoundingSphere
         {
             get => GetProperty<BoundingSphere>();
@@ -61,6 +61,7 @@ namespace MikuMikuModel.Nodes.Objects
         {
         }
 
+        [DisplayName( "名称" )]
         public ObjectNode( string name, Object data ) : base( name, data )
         {
         }
