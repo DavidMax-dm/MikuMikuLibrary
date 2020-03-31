@@ -7,14 +7,14 @@ namespace MikuMikuModel.Nodes.Sprites
     {
         public override NodeFlags Flags => NodeFlags.Rename;
 
-        [DisplayName( "Texture index" )]
+        [DisplayName( "纹理索引" )]
         public int TextureIndex
         {
             get => GetProperty<int>();
             set => SetProperty( value );
         }
 
-        [DisplayName( "Resolution mode" )]
+        [DisplayName( "分辨率模式 )]
         public ResolutionMode ResolutionMode
         {
             get => GetProperty<ResolutionMode>();
