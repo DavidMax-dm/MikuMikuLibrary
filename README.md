@@ -1,4 +1,5 @@
 # Miku Miku Library
+*MMM'S CHINESE VERSION
 Format library and file editor for Hatsune Miku: Project DIVA games.
 
 # Building
