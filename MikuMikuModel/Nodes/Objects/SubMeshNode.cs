@@ -8,7 +8,7 @@ namespace MikuMikuModel.Nodes.Objects
     {
         public override NodeFlags Flags => NodeFlags.None;
 
-        [DisplayName( "Bounding sphere" )]
+        [DisplayName( "包围球" )]
         public BoundingSphere BoundingSphere
         {
             get => GetProperty<BoundingSphere>();
@@ -21,35 +21,35 @@ namespace MikuMikuModel.Nodes.Objects
             set => SetProperty( value );
         }
 
-        [DisplayName( "Bone indices" )]
+        [DisplayName( "骨指数" )]
         public ushort[] BoneIndices
         {
             get => GetProperty<ushort[]>();
             set => SetProperty( value );
         }
 
-        [DisplayName( "Material index" )]
+        [DisplayName( "材质索引" )]
         public int MaterialIndex
         {
             get => GetProperty<int>();
             set => SetProperty( value );
         }
 
-        [DisplayName( "Material texture uv indices" )]
+        [DisplayName( "材质纹理UV指数 )]
         public byte[] MaterialUVIndices
         {
             get => GetProperty<byte[]>();
             set => SetProperty( value );
         }
 
-        [DisplayName( "Primitive type" )]
+        [DisplayName( "原始类型 )]
         public PrimitiveType PrimitiveType
         {
             get => GetProperty<PrimitiveType>();
             set => SetProperty( value );
         }
 
-        [DisplayName( "Bounding box" )]
+        [DisplayName( "边界盒" )]
         public BoundingBox BoundingBox
         {
             get => GetProperty<BoundingBox>();
