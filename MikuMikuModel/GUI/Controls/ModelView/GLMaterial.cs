@@ -64,7 +64,7 @@ namespace MikuMikuModel.GUI.Controls.ModelView
 
             Diffuse = GetTexture( material.Diffuse );
             Ambient = GetTexture( material.Ambient );
-            Normal = GetTexture( material.Normal );
+            法线 = GetTexture( material.Normal );
             Specular = GetTexture( material.Specular );
             Reflection = GetTexture( material.Reflection );
             Tangent = GetTexture( material.Tangent );
