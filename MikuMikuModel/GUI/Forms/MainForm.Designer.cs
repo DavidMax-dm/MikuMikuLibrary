@@ -131,7 +131,7 @@
             this.mExitToolStripMenuItem});
             this.mFileToolStripMenuItem.Name = "mFileToolStripMenuItem";
             this.mFileToolStripMenuItem.Size = new System.Drawing.Size(37, 21);
-            this.mFileToolStripMenuItem.Text = "File";
+            this.mFileToolStripMenuItem.Text = "文件";
             // 
             // mOpenToolStripMenuItem
             // 
