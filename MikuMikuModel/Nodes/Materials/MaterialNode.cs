@@ -44,7 +44,7 @@ namespace MikuMikuModel.Nodes.Materials
         }
 
         [TypeConverter( typeof( ColorTypeConverter ) )]
-        [DisplayName( "Emission颜色" )]
+        [DisplayName( "光颜色" )]
         public Color EmissionColor
         {
             get => GetProperty<Color>();
