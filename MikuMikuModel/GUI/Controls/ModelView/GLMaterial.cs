@@ -51,7 +51,7 @@ namespace MikuMikuModel.GUI.Controls.ModelView
 
             ActivateTexture( Diffuse, "DiffuseTexture" );
             ActivateTexture( Ambient, "AmbientTexture" );
-            ActivateTexture( Normal, "NormalTexture" );
+            ActivateTexture( 法线, "NormalTexture" );
             ActivateTexture( Specular, "SpecularTexture" );
             ActivateTexture( Reflection, "ReflectionTexture", TextureTarget.TextureCubeMap );
             ActivateTexture( Tangent, "TangentTexture" );
@@ -64,7 +64,7 @@ namespace MikuMikuModel.GUI.Controls.ModelView
 
             Diffuse = GetTexture( material.Diffuse );
             Ambient = GetTexture( material.Ambient );
-            法线 = GetTexture( material.Normal );
+            Normal = GetTexture( material.Normal );
             Specular = GetTexture( material.Specular );
             Reflection = GetTexture( material.Reflection );
             Tangent = GetTexture( material.Tangent );
