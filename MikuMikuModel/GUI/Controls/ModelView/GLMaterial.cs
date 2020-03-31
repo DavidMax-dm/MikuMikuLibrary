@@ -51,7 +51,7 @@ namespace MikuMikuModel.GUI.Controls.ModelView
 
             ActivateTexture( Diffuse, "DiffuseTexture" );
             ActivateTexture( Ambient, "AmbientTexture" );
-            ActivateTexture( 法线, "NormalTexture" );
+            ActivateTexture( Normal, "NormalTexture" );
             ActivateTexture( Specular, "SpecularTexture" );
             ActivateTexture( Reflection, "ReflectionTexture", TextureTarget.TextureCubeMap );
             ActivateTexture( Tangent, "TangentTexture" );
