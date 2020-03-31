@@ -38,7 +38,7 @@ namespace MikuMikuModel.GUI.Forms
                 return false;
 
             var result = MessageBox.Show(
-                "You have unsaved changes. Do you want to save them?", "Miku Miku Model", MessageBoxButtons.YesNoCancel,
+                "你更改了某些地方。你想要保存它们吗？", "Miku Miku Model", MessageBoxButtons.YesNoCancel,
                 MessageBoxIcon.Question );
 
             if ( result == DialogResult.Cancel )
@@ -107,7 +107,7 @@ namespace MikuMikuModel.GUI.Forms
             mStringBuilder.Append( " - Debug" );
 #endif
             mStringBuilder.AppendLine();
-            mStringBuilder.AppendLine( "This program was created by Skyth." );
+            mStringBuilder.AppendLine( "This program was created by Skyth.这个软件是Skyth制作的。由David Max翻译。" );
 
             MessageBox.Show( mStringBuilder.ToString(), "About", MessageBoxButtons.OK );
         }
@@ -203,7 +203,7 @@ namespace MikuMikuModel.GUI.Forms
                         typeof( IBinaryFile ).IsAssignableFrom( x ) && x.IsClass && !x.IsAbstract &&
                         NodeFactory.NodeTypes.ContainsKey( x ) ),
                     FormatModuleFlags.Import );
-                dialog.Title = "Select a file to open.";
+                dialog.Title = "选择一个要打开的文件。";
                 dialog.ValidateNames = true;
                 dialog.AddExtension = true;
 
@@ -230,7 +230,7 @@ namespace MikuMikuModel.GUI.Forms
 
             if ( errorsOccured || !typeof( IBinaryFile ).IsAssignableFrom( node.DataType ) )
             {
-                MessageBox.Show( "File could not be opened.", "Miku Miku Model", MessageBoxButtons.OK,
+                MessageBox.Show( "文件不受支持。", "Miku Miku Model", MessageBoxButtons.OK,
                     MessageBoxIcon.Error );
 
                 node?.Dispose();
@@ -330,7 +330,7 @@ namespace MikuMikuModel.GUI.Forms
         private void OnCombineMotions( object sender, EventArgs e )
         {
             string filePath =
-                ModuleImportUtilities.SelectModuleImport<Motion>( "Select the root .mot file." );
+                ModuleImportUtilities.SelectModuleImport<Motion>( "选择.mot的根文件。（例：你有pv705_rts_p1_00和pv705_rts_p1_00_div_1，此时只需选择pv705_rts_p1_00。）" );
 
             if ( filePath == null )
                 return;
@@ -338,7 +338,7 @@ namespace MikuMikuModel.GUI.Forms
             var configuration = ConfigurationList.Instance.FindConfiguration( filePath );
             if ( configuration?.BoneDatabase == null )
             {
-                MessageBox.Show( "Could not find suitable configuration for the file.", "Miku Miku Model",
+                MessageBox.Show( "找不到适合该文件的配置。", "Miku Miku Model",
                     MessageBoxButtons.OK, MessageBoxIcon.Error );
             }
             else
@@ -346,7 +346,7 @@ namespace MikuMikuModel.GUI.Forms
                 string baseFilePath = Path.ChangeExtension( filePath, null );
 
                 string outputFilePath = ModuleExportUtilities.SelectModuleExport<Motion>(
-                    "Select a file to export to.",
+                    "选择一个地方导出。",
                     Path.GetFileName( $"{baseFilePath}_combined.mot" ) );
 
                 if ( string.IsNullOrEmpty( outputFilePath ) )
