@@ -29,7 +29,7 @@
             this.mOkButton.Name = "mOkButton";
             this.mOkButton.Size = new System.Drawing.Size(75, 23);
             this.mOkButton.TabIndex = 3;
-            this.mOkButton.Text = "OK";
+            this.mOkButton.Text = "完成";
             this.mOkButton.UseVisualStyleBackColor = true;
             // 
             // mCancelButton
@@ -40,7 +40,7 @@
             this.mCancelButton.Name = "mCancelButton";
             this.mCancelButton.Size = new System.Drawing.Size(75, 23);
             this.mCancelButton.TabIndex = 4;
-            this.mCancelButton.Text = "Cancel";
+            this.mCancelButton.Text = "取消";
             this.mCancelButton.UseVisualStyleBackColor = true;
             // 
             // mNodeTreeView
