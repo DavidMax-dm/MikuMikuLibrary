@@ -138,7 +138,7 @@
             this.mOpenToolStripMenuItem.Name = "mOpenToolStripMenuItem";
             this.mOpenToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.mOpenToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.mOpenToolStripMenuItem.Text = "Open";
+            this.mOpenToolStripMenuItem.Text = "打开";
             this.mOpenToolStripMenuItem.Click += new System.EventHandler(this.OnOpen);
             // 
             // mSaveToolStripMenuItem
@@ -147,7 +147,7 @@
             this.mSaveToolStripMenuItem.Name = "mSaveToolStripMenuItem";
             this.mSaveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.mSaveToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.mSaveToolStripMenuItem.Text = "Save";
+            this.mSaveToolStripMenuItem.Text = "保存";
             this.mSaveToolStripMenuItem.Click += new System.EventHandler(this.OnSave);
             // 
             // mSaveAsToolStripMenuItem
@@ -157,7 +157,7 @@
             this.mSaveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.S)));
             this.mSaveAsToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.mSaveAsToolStripMenuItem.Text = "Save As";
+            this.mSaveAsToolStripMenuItem.Text = "另存为";
             this.mSaveAsToolStripMenuItem.Click += new System.EventHandler(this.OnSaveAs);
             // 
             // mCloseToolStripMenuItem
@@ -165,7 +165,7 @@
             this.mCloseToolStripMenuItem.Enabled = false;
             this.mCloseToolStripMenuItem.Name = "mCloseToolStripMenuItem";
             this.mCloseToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.mCloseToolStripMenuItem.Text = "Close";
+            this.mCloseToolStripMenuItem.Text = "关闭";
             this.mCloseToolStripMenuItem.Click += new System.EventHandler(this.OnNodeClose);
             // 
             // mToolStripSeparator2
@@ -178,7 +178,7 @@
             this.mExitToolStripMenuItem.Name = "mExitToolStripMenuItem";
             this.mExitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.mExitToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.mExitToolStripMenuItem.Text = "Exit";
+            this.mExitToolStripMenuItem.Text = "退出";
             this.mExitToolStripMenuItem.Click += new System.EventHandler(this.OnExit);
             // 
             // mConfigurationsToolStripMenuItem
@@ -194,7 +194,7 @@
             this.mCombineMotsFileToolStripMenuItem});
             this.mToolsToolStripMenuItem.Name = "mToolsToolStripMenuItem";
             this.mToolsToolStripMenuItem.Size = new System.Drawing.Size(46, 21);
-            this.mToolsToolStripMenuItem.Text = "Tools";
+            this.mToolsToolStripMenuItem.Text = "工具";
             // 
             // mCombineMotsFileToolStripMenuItem
             // 
@@ -207,14 +207,14 @@
             // 
             this.mHelpToolStripMenuItem.Name = "mHelpToolStripMenuItem";
             this.mHelpToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
-            this.mHelpToolStripMenuItem.Text = "Help";
+            this.mHelpToolStripMenuItem.Text = "帮助";
             this.mHelpToolStripMenuItem.Click += new System.EventHandler(this.OnHelp);
             // 
             // mAboutToolStripMenuItem
             // 
             this.mAboutToolStripMenuItem.Name = "mAboutToolStripMenuItem";
             this.mAboutToolStripMenuItem.Size = new System.Drawing.Size(52, 21);
-            this.mAboutToolStripMenuItem.Text = "About";
+            this.mAboutToolStripMenuItem.Text = "关于";
             this.mAboutToolStripMenuItem.Click += new System.EventHandler(this.OnAbout);
             // 
             // mPanel
@@ -230,7 +230,7 @@
             // 
             this.mStylesToolStripMenuItem.Name = "mStylesToolStripMenuItem";
             this.mStylesToolStripMenuItem.Size = new System.Drawing.Size(49, 21);
-            this.mStylesToolStripMenuItem.Text = "Styles";
+            this.mStylesToolStripMenuItem.Text = "主题";
             // 
             // MainForm
             // 
@@ -242,7 +242,7 @@
             this.Controls.Add(this.mMainSplitContainer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "Miku Miku Model";
+            this.Text = "Miku Miku Model - CN VER";
             this.mMainSplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mMainSplitContainer)).EndInit();
             this.mMainSplitContainer.ResumeLayout(false);
