@@ -87,7 +87,7 @@ namespace MikuMikuModel.Nodes
             set
             {
                 if ( mParent != null && value != null )
-                    throw new InvalidOperationException( "Cannot set parent, node is already owned by one" );
+                    throw new InvalidOperationException( "无法设置节点，node is already owned by one" );
 
                 if ( SourceConfiguration == null && value != null )
                     SourceConfiguration = value.SourceConfiguration;
@@ -238,7 +238,7 @@ namespace MikuMikuModel.Nodes
             while ( sInputDialog.ShowDialog() == DialogResult.OK )
                 if ( string.IsNullOrEmpty( sInputDialog.Input ) )
                 {
-                    MessageBox.Show( "Please enter a valid name.", "Miku Miku Model", MessageBoxButtons.OK,
+                    MessageBox.Show( "请输入一个有效的名字。", "Miku Miku Model", MessageBoxButtons.OK,
                         MessageBoxIcon.Error );
 
                     sInputDialog.Input = Name;
@@ -264,7 +264,7 @@ namespace MikuMikuModel.Nodes
             var module = ModuleImportUtilities.GetModule( mImportHandlers.Keys, filePath );
             if ( module == null )
             {
-                MessageBox.Show( "File could not be imported.", "Miku Miku Model", MessageBoxButtons.OK,
+                MessageBox.Show( "无法导入文件。", "Miku Miku Model", MessageBoxButtons.OK,
                     MessageBoxIcon.Error );
             }
             else
@@ -289,7 +289,7 @@ namespace MikuMikuModel.Nodes
                     AutoUpgradeEnabled = true,
                     CheckPathExists = true,
                     Filter = ModuleFilterGenerator.GenerateFilter( mImportHandlers.Keys, FormatModuleFlags.Import ),
-                    Title = "Select file(s) to import from.",
+                    Title = "选择要从中导入的文件。",
                     ValidateNames = true,
                     AddExtension = true,
                     Multiselect = true
@@ -315,7 +315,7 @@ namespace MikuMikuModel.Nodes
             var module = ModuleExportUtilities.GetModule( mExportHandlers.Keys, filePath );
             if ( module == null )
             {
-                MessageBox.Show( "Node could not be exported.", "Miku Miku Model", MessageBoxButtons.OK,
+                MessageBox.Show( "无法导出节点。", "Miku Miku Model", MessageBoxButtons.OK,
                     MessageBoxIcon.Error );
             }
             else
@@ -339,7 +339,7 @@ namespace MikuMikuModel.Nodes
                     CheckPathExists = true,
                     Filter = ModuleFilterGenerator.GenerateFilter( mExportHandlers.Keys, FormatModuleFlags.Export ),
                     OverwritePrompt = true,
-                    Title = "Select a file to export to.",
+                    Title = "选择要导出的文件。",
                     ValidateNames = true,
                     AddExtension = true
                 };
@@ -367,7 +367,7 @@ namespace MikuMikuModel.Nodes
             var module = ModuleImportUtilities.GetModule( mReplaceHandlers.Keys, filePath );
             if ( module == null )
             {
-                MessageBox.Show( "Node could not be replaced.", "Miku Miku Model", MessageBoxButtons.OK,
+                MessageBox.Show( "节点无法替换。", "Miku Miku Model", MessageBoxButtons.OK,
                     MessageBoxIcon.Error );
             }
             else
