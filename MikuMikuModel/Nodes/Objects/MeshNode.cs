@@ -28,52 +28,56 @@ namespace MikuMikuModel.Nodes.Objects
             }
         }
 
-        [DisplayName( "Bounding sphere" )]
+        [DisplayName( "包围球 )]
         public BoundingSphere BoundingSphere
         {
             get => GetProperty<BoundingSphere>();
             set => SetProperty( value );
         }
 
+        [DisplayName( "顶点" )]
         public Vector3[] Vertices
         {
             get => GetProperty<Vector3[]>();
             set => SetProperty( value );
         }
 
+        [DisplayName( "法线" )]
         public Vector3[] Normals
         {
             get => GetProperty<Vector3[]>();
             set => SetProperty( value );
         }
 
+        [DisplayName( "切线" )]
         public Vector4[] Tangents
         {
             get => GetProperty<Vector4[]>();
             set => SetProperty( value );
         }
 
-        [DisplayName( "UV channel 1" )]
+        [DisplayName( "UV通道 1" )]
         public Vector2[] UVChannel1
         {
             get => GetProperty<Vector2[]>();
             set => SetProperty( value );
         }
 
-        [DisplayName( "UV channel 2" )]
+        [DisplayName( "UV通道 2" )]
         public Vector2[] UVChannel2
         {
             get => GetProperty<Vector2[]>();
             set => SetProperty( value );
         }
 
+        [DisplayName( "颜色" )]
         public Color[] Colors
         {
             get => GetProperty<Color[]>();
             set => SetProperty( value );
         }
 
-        [DisplayName( "Bone weights" )]
+        [DisplayName( "权重" )]
         public BoneWeight[] BoneWeights
         {
             get => GetProperty<BoneWeight[]>();
@@ -93,6 +97,7 @@ namespace MikuMikuModel.Nodes.Objects
         {
         }
 
+        [DisplayName( "名称" )]
         public MeshNode( string name, Mesh data ) : base( name, data )
         {
         }
