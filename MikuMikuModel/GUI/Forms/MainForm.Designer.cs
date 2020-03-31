@@ -185,7 +185,7 @@
             // 
             this.mConfigurationsToolStripMenuItem.Name = "mConfigurationsToolStripMenuItem";
             this.mConfigurationsToolStripMenuItem.Size = new System.Drawing.Size(98, 21);
-            this.mConfigurationsToolStripMenuItem.Text = "Configurations";
+            this.mConfigurationsToolStripMenuItem.Text = "配置（游戏的位置）";
             this.mConfigurationsToolStripMenuItem.Click += new System.EventHandler(this.OnConfigurations);
             // 
             // mToolsToolStripMenuItem
@@ -200,7 +200,7 @@
             // 
             this.mCombineMotsFileToolStripMenuItem.Name = "mCombineMotsFileToolStripMenuItem";
             this.mCombineMotsFileToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.mCombineMotsFileToolStripMenuItem.Text = "Combine divided .mot files into one";
+            this.mCombineMotsFileToolStripMenuItem.Text = "合并mot文件（F2/X）";
             this.mCombineMotsFileToolStripMenuItem.Click += new System.EventHandler(this.OnCombineMotions);
             // 
             // mHelpToolStripMenuItem
