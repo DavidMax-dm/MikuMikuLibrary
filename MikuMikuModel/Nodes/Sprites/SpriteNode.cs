@@ -14,7 +14,7 @@ namespace MikuMikuModel.Nodes.Sprites
             set => SetProperty( value );
         }
 
-        [DisplayName( "分辨率模式 )]
+        [DisplayName( "分辨率模式" )]
         public ResolutionMode ResolutionMode
         {
             get => GetProperty<ResolutionMode>();
