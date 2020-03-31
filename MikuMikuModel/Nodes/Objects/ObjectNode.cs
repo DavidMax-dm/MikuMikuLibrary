@@ -61,7 +61,6 @@ namespace MikuMikuModel.Nodes.Objects
         {
         }
 
-        [DisplayName( "名称" )]
         public ObjectNode( string name, Object data ) : base( name, data )
         {
         }
