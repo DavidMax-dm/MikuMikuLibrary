@@ -30,7 +30,6 @@ namespace MikuMikuModel.Nodes.Objects
         {
         }
 
-        [DisplayName( "名称" )]
         public ExDataNode( string name, ExData data ) : base( name, data )
         {
         }
