@@ -28,7 +28,7 @@ namespace MikuMikuModel.Nodes.Objects
             }
         }
 
-        [DisplayName( "包围球 )]
+        [DisplayName( "包围球" )]
         public BoundingSphere BoundingSphere
         {
             get => GetProperty<BoundingSphere>();
