@@ -35,14 +35,14 @@ namespace MikuMikuModel.Nodes.Objects
             set => SetProperty( value );
         }
 
-        [DisplayName( "材质纹理UV指数 )]
+        [DisplayName( "材质纹理UV指数" )]
         public byte[] MaterialUVIndices
         {
             get => GetProperty<byte[]>();
             set => SetProperty( value );
         }
 
-        [DisplayName( "原始类型 )]
+        [DisplayName( "原始类型" )]
         public PrimitiveType PrimitiveType
         {
             get => GetProperty<PrimitiveType>();
