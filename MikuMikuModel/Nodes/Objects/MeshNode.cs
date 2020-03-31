@@ -97,7 +97,6 @@ namespace MikuMikuModel.Nodes.Objects
         {
         }
 
-        [DisplayName( "名称" )]
         public MeshNode( string name, Mesh data ) : base( name, data )
         {
         }
