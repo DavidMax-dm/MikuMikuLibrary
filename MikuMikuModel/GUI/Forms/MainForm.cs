@@ -168,7 +168,7 @@ namespace MikuMikuModel.GUI.Forms
 
         private void OnHelp( object sender, EventArgs e )
         {
-            Process.Start( "https://github.com/blueskythlikesclouds/MikuMikuLibrary/wiki/Miku-Miku-Model" );
+            Process.Start( "https://github.com/DavidMax-dm/MikuMikuLibrary/wiki/Miku-Miku-Model-%E7%9A%84%E4%BD%BF%E7%94%A8" );
         }
 
         private void OnNodeClose( object sender, EventArgs e )
