@@ -38,11 +38,11 @@ namespace MikuMikuModel.Nodes.Archives
             RegisterImportHandler<Stream>( filePath => Data.Add( Path.GetFileName( filePath ), filePath ) );
             RegisterExportHandler<FarcArchive>( filePath => Data.Save( filePath ) );
             RegisterReplaceHandler<FarcArchive>( BinaryFile.Load<FarcArchive> );
-            RegisterCustomHandler( "Export All", () =>
+            RegisterCustomHandler( "全部导出", () =>
                 {
                     using ( var folderBrowseDialog = new VistaFolderBrowserDialog() )
                     {
-                        folderBrowseDialog.Description = "Select a folder to export entries to.";
+                        folderBrowseDialog.Description = "选择一个文件夹以导出...";
                         folderBrowseDialog.UseDescriptionForTitle = true;
 
                         if ( folderBrowseDialog.ShowDialog() != DialogResult.OK )
