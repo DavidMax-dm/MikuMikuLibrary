@@ -74,7 +74,7 @@ namespace MikuMikuModel.Nodes.Objects
 
                 return Importer.ConvertObjectSetFromAiSceneWithSingleObject( filePath );
             } );
-            RegisterCustomHandler( "Rename all shaders to...", () =>
+            RegisterCustomHandler( "将所有着色器更改为...", () =>
             {
                 using ( var inputDialog = new InputDialog { WindowTitle = "Rename all shaders", Input = "BLINN" } )
                 {
@@ -102,7 +102,7 @@ namespace MikuMikuModel.Nodes.Objects
 
                 IsDirty = true;
             } );
-            RegisterCustomHandler( "Combine all objects into one", () =>
+            RegisterCustomHandler( "把所有模型合并为一个", () =>
             {
                 if ( Data.Objects.Count <= 1 )
                     return;
