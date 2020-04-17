@@ -46,11 +46,11 @@ namespace MikuMikuModel.Nodes.Textures
             } );
             RegisterExportHandler<TextureSet>( filePath => Data.Save( filePath ) );
             RegisterReplaceHandler<TextureSet>( BinaryFile.Load<TextureSet> );
-            RegisterCustomHandler( "Export All", () =>
+            RegisterCustomHandler( "全部导出", () =>
                 {
                     using ( var folderBrowseDialog = new VistaFolderBrowserDialog() )
                     {
-                        folderBrowseDialog.Description = "Select a folder to save textures to.";
+                        folderBrowseDialog.Description = "选择一个文件夹以导出贴图...";
                         folderBrowseDialog.UseDescriptionForTitle = true;
 
                         if ( folderBrowseDialog.ShowDialog() != DialogResult.OK )
