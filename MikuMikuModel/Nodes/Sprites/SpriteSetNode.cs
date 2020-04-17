@@ -22,11 +22,11 @@ namespace MikuMikuModel.Nodes.Sprites
         {
             RegisterReplaceHandler<SpriteSet>( BinaryFile.Load<SpriteSet> );
             RegisterExportHandler<SpriteSet>( filePath => Data.Save( filePath ) );
-            RegisterCustomHandler( "Export All", () =>
+            RegisterCustomHandler( "全部导出", () =>
                 {
                     using ( var folderBrowseDialog = new VistaFolderBrowserDialog() )
                     {
-                        folderBrowseDialog.Description = "Select a folder to save sprites to.";
+                        folderBrowseDialog.Description = "选择一个文件夹导出Sprites...";
                         folderBrowseDialog.UseDescriptionForTitle = true;
 
                         if ( folderBrowseDialog.ShowDialog() != DialogResult.OK )
@@ -36,20 +36,20 @@ namespace MikuMikuModel.Nodes.Sprites
                             pair.Value.Save( Path.Combine( folderBrowseDialog.SelectedPath, $"{pair.Key.Name}.png" ) );
                     }
                 }, Keys.Control | Keys.Shift | Keys.E );
-            RegisterCustomHandler( "Set all resolution modes to...", () =>
+            RegisterCustomHandler( "将所有分辨率模式设置为...", () =>
             {
                 string input = "HDTV720";
 
                 while ( true )
                 {
-                    using ( var inputDialog = new InputDialog { WindowTitle = "Set all resolution modes", Input = input } )
+                    using ( var inputDialog = new InputDialog { WindowTitle = "设置所有分辨率模式", Input = input } )
                     {
                         if ( inputDialog.ShowDialog() != DialogResult.OK )
                             break;
 
                         if ( !Enum.TryParse( input = inputDialog.Input, out ResolutionMode mode ) )
                         {
-                            MessageBox.Show( "Please enter a valid resolution mode.", "Miku Miku Model",
+                            MessageBox.Show( "请输入有效的分辨率模式", "Miku Miku Model",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error );
 
                             continue;
