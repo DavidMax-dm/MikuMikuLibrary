@@ -586,17 +586,17 @@ namespace MikuMikuModel.Nodes
             if ( Flags.HasFlag( NodeFlags.Import ) && mImportHandlers.Count > 0 )
             {
                 ContextMenuStrip.Items.Add( new ToolStripSeparator() );
-                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "Import", null, CreateEventHandler( () => Import() ),
+                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "导入", null, CreateEventHandler( () => Import() ),
                     Keys.Control | Keys.I ) );
             }
 
             if ( Flags.HasFlag( NodeFlags.Export ) && mExportHandlers.Count > 0 )
-                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "Export", null, CreateEventHandler( () => Export() ),
+                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "导出", null, CreateEventHandler( () => Export() ),
                     Keys.Control | Keys.E ) );
 
             if ( Flags.HasFlag( NodeFlags.Replace ) && mReplaceHandlers.Count > 0 )
             {
-                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "Replace", null,
+                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "替换", null,
                     CreateEventHandler( () => Replace() ), Keys.Control | Keys.R ) );
                 ContextMenuStrip.Items.Add( new ToolStripSeparator() );
             }
@@ -604,15 +604,15 @@ namespace MikuMikuModel.Nodes
             if ( mParent != null && mParent.Flags.HasFlag( NodeFlags.Move ) )
             {
                 ContextMenuStrip.Items.Add( new ToolStripSeparator() );
-                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "Move Up", null, CreateEventHandler( MoveUp ),
+                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "上移", null, CreateEventHandler( MoveUp ),
                     Keys.Control | Keys.Up ) );
-                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "Move Down", null, CreateEventHandler( MoveDown ),
+                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "下移", null, CreateEventHandler( MoveDown ),
                     Keys.Control | Keys.Down ) );
             }
 
             if ( mParent != null && mParent.Flags.HasFlag( NodeFlags.Remove ) )
             {
-                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "Remove", null, CreateEventHandler( Remove ),
+                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "移除", null, CreateEventHandler( Remove ),
                     Keys.Control | Keys.Delete ) );
                 ContextMenuStrip.Items.Add( new ToolStripSeparator() );
             }
@@ -620,7 +620,7 @@ namespace MikuMikuModel.Nodes
             if ( Flags.HasFlag( NodeFlags.Rename ) )
             {
                 ContextMenuStrip.Items.Add( new ToolStripSeparator() );
-                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "Rename", null, CreateEventHandler( Rename ),
+                ContextMenuStrip.Items.Add( new ToolStripMenuItem( "重命名", null, CreateEventHandler( Rename ),
                     Keys.Control | Keys.N ) );
             }
 
